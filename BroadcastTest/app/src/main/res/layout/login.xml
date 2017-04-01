@@ -47,6 +47,7 @@
             android:layout_gravity="center_vertical"/>
 
         <EditText
+            android:id="@+id/password"
             android:layout_width="0dp"
             android:maxLines="1"
             android:paddingLeft="10sp"
@@ -61,16 +62,19 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal">
         <Button
+            android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="登陆"
             android:layout_gravity="center_horizontal"/>
         <Button
+            android:id="@+id/reg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="注册"
             android:layout_gravity="center_horizontal"/>
         <TextView
+            android:id="@+id/forgetPwd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="忘记密码"
