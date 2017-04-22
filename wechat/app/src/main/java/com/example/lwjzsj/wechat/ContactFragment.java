@@ -2,10 +2,12 @@ package com.example.lwjzsj.wechat;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -30,6 +32,12 @@ public class ContactFragment extends Fragment {
         View view = inflater.inflate(R.layout.contact_list_frag,viewGroup,false);
         listView = (ListView)view.findViewById(R.id.contact_frag_view);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                MsgActivity.actionStart(getActivity());
+            }
+        });
         return view;
     }
     private List<Wechat> getContact(){
