@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/local_music_index"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:background="@drawable/linear_style_no_radius"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:text="所有音乐"/>
+</LinearLayout>
